@@ -1,7 +1,8 @@
 {
   "headers": {
     "/*": {
-      "X-Author": "openeduweb"
+      "X-Author": "openeduweb",
+      "Access-Control-Allow-Origin": "*"
 }
 }
 }
