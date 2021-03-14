@@ -1,21 +1,21 @@
 {
   "headers": {
     "/*": {
-      "X-Author": "portyan19",
+      "X-Author": "flhero50",
       "Access-Control-Allow-Origin": "*",
-      "Content-Type": "text/plai",
+      "Content-Type": "text/plain",
       "charset": "UTF-8"
     },
     "/sample/*": {
       "X-Author": "190659",
       "Access-Control-Allow-Origin": "*",
-      "Content-Type": "text/plai",
+      "Content-Type": "text/plain",
       "charset": "UTF-8"
     },
     "/login/*": {
       "X-Author": "190659",
       "Access-Control-Allow-Origin": "*",
-      "Content-Type": "text/plai",
+      "Content-Type": "text/plain",
       "charset": "UTF-8"
     }
   }
