@@ -1,1 +1,26 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+<form name="search">
+    <input type="text" name="key" placeholder="Введите ключ"></input>
+    <input type="button" name="print" value="Печать" />
+</form>
+<div id="printBlock"></div>
+<script>
+var keyBox = document.search.key;
+ 
+// обработчик изменения текста
+function onchange(e){
+    // получаем элемент printBlock
+    var printBlock = document.getElementById("printBlock");
+    // получаем новое значение
+    var val = e.target.value;
+    // установка значения
+    document.location.href = val;
+}
+</script>
+</body>
+</html>
