@@ -5,15 +5,13 @@
 </head>
 <body>
 <form name="search">
-    <input type="text" name="key" placeholder="Введите ключ"></input>
-    <input type="button" name="print" value="Печать" />
+    <input type="text" name="key" id="inp" placeholder="Введите ключ"></input>
+    <input type="button" name="print" id="bt" value="Печать" />
 </form>
+<div id="printBlock"></div>
 <script>
-var keyBox = document.search.key;
-function onchange(e){
-    var printBlock = document.getElementById("printBlock");
-    var val = e.target.value;
-    document.location.href = val;
+let promise = text(fetch(document.search.key))
+alert(promise)
 }
 </script>
 </body>
