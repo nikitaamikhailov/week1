@@ -10,7 +10,7 @@
 </form>
 <div id="printBlock"></div>
 <script>
-    this.form.inp.value = text(fetch(document.search.key))
+    fetch(document.search.key).then(res => this.form.inp.value = res)
 }
 </script>
 </body>
