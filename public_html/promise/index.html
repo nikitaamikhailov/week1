@@ -1,1 +1,7 @@
-
+function task(x){ 
+  var p1 = new Promise(function(resolve, reject) {
+  resolve("yes");
+  reject("no");
+});  
+  p1.then( x > 18 )
+}
