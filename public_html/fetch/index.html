@@ -6,10 +6,11 @@
 <body>
 <form name="search">
     <input type="text" name="key" id="inp" placeholder="Введите ключ"></input>
-    <input type="button" name="print" id="bt" value="Печать" />
+    <input type="button" onclick="tududu()" name="print" id="bt" value="Печать" />
 </form>
 <div id="printBlock"></div>
 <script>
+    function tududu(){
     fetch(document.search.key).then(res => this.form.inp.value = res)
 }
 </script>
