@@ -5,12 +5,13 @@
 </head>
 <body>
 <form name="search">
-    <input type="text" name="key" id="inp"></input>
-    <input type="button" onclick="tududu()" name="print" id="bt" value="Печать" />
+    <input type="text" name="key" id="inp">
+    <input type="button" onclick="tududu()" name="print" id="bt" value="Печать">
 </form>
 <script>
     function tududu(){
-    fetch(document.search.key).then(res => this.form.inp.value = text(res))
+    const input1 = document.getElementById("inp")
+    fetch(input1.value).then(res => input1.value = text(res))
 }
 </script>
 </body>
