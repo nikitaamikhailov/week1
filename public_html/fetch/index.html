@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-</head>
-<body>
-<form>
-    <input type="text" name="key" id="inp">
-    <input type="button" onclick="tududu()" name="print" id="bt" value="Кнопка">
-</form>
-<script>
-    function tududu(){
-    const input1 = document.getElementById("inp")
-    fetch(input1.value).then(res => input1.value = text(res))
-}
-</script>
-</body>
+ <head>
+  <title>Страница Fetch</title><meta charset="utf-8">
+ </head>
+ <body>
+    <input id = "inp">
+    <button id = "bt">
+      Щелкни  
+    </button>
+ </body>
+ <script>
+  bt.addEventListener("click", async () => {
+  const input = document.querySelector('#inp').value;
+  const response = await fetch(input);
+  const result = await response.text();
+  document.querySelector('#inp').value = result;
+  });
+ </script>
 </html>
