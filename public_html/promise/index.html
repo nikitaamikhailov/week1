@@ -1,4 +1,7 @@
 function task(x) {
-  let p1;
-  return p1 = new Promise((yes,no) => yes(x < 18));
+  if (x < 18){
+  return Promise.resolve()
+} else {
+  return Promise.reject()
+}
 }
